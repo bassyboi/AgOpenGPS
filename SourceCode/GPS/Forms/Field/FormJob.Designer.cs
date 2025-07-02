@@ -34,7 +34,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnFromKML = new System.Windows.Forms.Button();
             this.btnFromISOXML = new System.Windows.Forms.Button();
+            this.btnFromJohnDeere = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnJobOpen = new System.Windows.Forms.Button();
             this.btnJobClose = new System.Windows.Forms.Button();
             this.btnInField = new System.Windows.Forms.Button();
@@ -56,11 +58,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.label5, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnFromKML, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnFromISOXML, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnFromJohnDeere, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnJobOpen, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnJobClose, 2, 0);
@@ -70,12 +74,13 @@
             this.tableLayoutPanel1.Controls.Add(this.btnJobNew, 0, 3);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 7);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(605, 424);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(605, 530);
             this.tableLayoutPanel1.TabIndex = 106;
             // 
             // label4
@@ -87,6 +92,16 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(17, 106);
             this.label4.TabIndex = 111;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(294, 424);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 106);
+            this.label5.TabIndex = 113;
             // 
             // label3
             // 
@@ -153,6 +168,29 @@
             this.btnFromISOXML.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFromISOXML.UseVisualStyleBackColor = false;
             this.btnFromISOXML.Click += new System.EventHandler(this.btnFromISOXML_Click);
+            // 
+            // btnFromJohnDeere
+            // 
+            this.btnFromJohnDeere.BackColor = System.Drawing.Color.Transparent;
+            this.btnFromJohnDeere.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnFromJohnDeere.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnFromJohnDeere.FlatAppearance.BorderSize = 0;
+            this.btnFromJohnDeere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFromJohnDeere.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFromJohnDeere.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFromJohnDeere.Image = global::AgOpenGPS.Properties.Resources.JohnDeere;
+            this.btnFromJohnDeere.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFromJohnDeere.Location = new System.Drawing.Point(5, 340);
+            this.btnFromJohnDeere.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnFromJohnDeere.Name = "btnFromJohnDeere";
+            this.btnFromJohnDeere.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnFromJohnDeere.Size = new System.Drawing.Size(281, 98);
+            this.btnFromJohnDeere.TabIndex = 112;
+            this.btnFromJohnDeere.Text = "Import Files";
+            this.btnFromJohnDeere.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFromJohnDeere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFromJohnDeere.UseVisualStyleBackColor = false;
+            this.btnFromJohnDeere.Click += new System.EventHandler(this.btnFromJohnDeere_Click);
             // 
             // label1
             // 
@@ -340,7 +378,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(624, 514);
+            this.ClientSize = new System.Drawing.Size(624, 620);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnDeleteAB);
@@ -350,7 +388,7 @@
             this.Location = new System.Drawing.Point(200, 200);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(640, 530);
+            this.MinimumSize = new System.Drawing.Size(640, 640);
             this.Name = "FormJob";
             this.Padding = new System.Windows.Forms.Padding(4);
             this.ShowIcon = false;
@@ -376,10 +414,12 @@
         private System.Windows.Forms.Button btnInField;
         private System.Windows.Forms.Button btnFromKML;
         private System.Windows.Forms.Button btnFromISOXML;
+        private System.Windows.Forms.Button btnFromJohnDeere;
         private System.Windows.Forms.Button btnDeleteAB;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

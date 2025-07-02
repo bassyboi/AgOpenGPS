@@ -581,11 +581,19 @@ namespace AgOpenGPS
                     { form2.ShowDialog(this); }
                 }
 
-                //load from Existing
+                //load from ISOXML
                 else if (result == DialogResult.Abort)
                 {
                     //ask for a field to copy
                     using (var form2 = new FormFieldISOXML(this))
+                    { form2.ShowDialog(this); }
+                }
+
+                //load from John Deere
+                else if (result == DialogResult.Ignore)
+                {
+                    //ask for John Deere file
+                    using (var form2 = new FormFieldImport(this))
                     { form2.ShowDialog(this); }
                 }
 

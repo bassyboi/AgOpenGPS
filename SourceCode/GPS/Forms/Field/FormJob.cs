@@ -256,6 +256,14 @@ namespace AgOpenGPS
             Close();
         }
 
+        private void btnFromJohnDeere_Click(object sender, EventArgs e)
+        {
+            if (mf.isJobStarted) mf.FileSaveEverythingBeforeClosingField();
+            //back to FormGPS - using DialogResult.Ignore for import files
+            DialogResult = DialogResult.Ignore;
+            Close();
+        }
+
         private void btnDeleteAB_Click(object sender, EventArgs e)
         {
             mf.isCancelJobMenu = true;
