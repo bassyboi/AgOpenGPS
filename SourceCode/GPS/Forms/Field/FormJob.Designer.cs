@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnFromKML = new System.Windows.Forms.Button();
             this.btnFromISOXML = new System.Windows.Forms.Button();
-            this.btnFromJohnDeere = new System.Windows.Forms.Button();
+            this.btnFromImport = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnJobOpen = new System.Windows.Forms.Button();
@@ -64,7 +64,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnFromKML, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnFromISOXML, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnFromJohnDeere, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnFromImport, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnJobOpen, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnJobClose, 2, 0);
@@ -169,28 +169,28 @@
             this.btnFromISOXML.UseVisualStyleBackColor = false;
             this.btnFromISOXML.Click += new System.EventHandler(this.btnFromISOXML_Click);
             // 
-            // btnFromJohnDeere
+            // btnFromImport
             // 
-            this.btnFromJohnDeere.BackColor = System.Drawing.Color.Transparent;
-            this.btnFromJohnDeere.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFromJohnDeere.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnFromJohnDeere.FlatAppearance.BorderSize = 0;
-            this.btnFromJohnDeere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFromJohnDeere.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFromJohnDeere.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnFromJohnDeere.Image = global::AgOpenGPS.Properties.Resources.JohnDeere;
-            this.btnFromJohnDeere.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFromJohnDeere.Location = new System.Drawing.Point(5, 340);
-            this.btnFromJohnDeere.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.btnFromJohnDeere.Name = "btnFromJohnDeere";
-            this.btnFromJohnDeere.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnFromJohnDeere.Size = new System.Drawing.Size(281, 98);
-            this.btnFromJohnDeere.TabIndex = 112;
-            this.btnFromJohnDeere.Text = "Import Files";
-            this.btnFromJohnDeere.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFromJohnDeere.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFromJohnDeere.UseVisualStyleBackColor = false;
-            this.btnFromJohnDeere.Click += new System.EventHandler(this.btnFromJohnDeere_Click);
+            this.btnFromImport.BackColor = System.Drawing.Color.Transparent;
+            this.btnFromImport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnFromImport.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnFromImport.FlatAppearance.BorderSize = 0;
+            this.btnFromImport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFromImport.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFromImport.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFromImport.Image = global::AgOpenGPS.Properties.Resources.FileOpen;
+            this.btnFromImport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFromImport.Location = new System.Drawing.Point(5, 340);
+            this.btnFromImport.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.btnFromImport.Name = "btnFromImport";
+            this.btnFromImport.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnFromImport.Size = new System.Drawing.Size(281, 98);
+            this.btnFromImport.TabIndex = 112;
+            this.btnFromImport.Text = "Import Files";
+            this.btnFromImport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFromImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFromImport.UseVisualStyleBackColor = false;
+            this.btnFromImport.Click += new System.EventHandler(this.btnFromImport_Click);
             // 
             // label1
             // 
@@ -414,7 +414,7 @@
         private System.Windows.Forms.Button btnInField;
         private System.Windows.Forms.Button btnFromKML;
         private System.Windows.Forms.Button btnFromISOXML;
-        private System.Windows.Forms.Button btnFromJohnDeere;
+        private System.Windows.Forms.Button btnFromImport;
         private System.Windows.Forms.Button btnDeleteAB;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
